@@ -12,17 +12,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" went to the store"
+        android:text=" _________went to _____________."
         android:id="@+id/storyText"
+        android:layout_marginTop="45dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text="Name"
         android:id="@+id/nameTextView"
-        android:layout_alignBottom="@+id/storyText"
-        android:layout_toLeftOf="@+id/storyText"
-        android:layout_toStartOf="@+id/storyText" />
+        android:layout_marginStart="16dp"
+        android:layout_alignTop="@+id/storyText"
+        android:layout_alignLeft="@+id/storyText"
+        android:layout_alignStart="@+id/storyText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place"
+        android:id="@+id/placeTextView"
+        android:layout_alignTop="@+id/storyText"
+        android:layout_alignRight="@+id/storyText"
+        android:layout_alignEnd="@+id/storyText"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
 </RelativeLayout>
