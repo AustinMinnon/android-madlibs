@@ -7,21 +7,27 @@ import android.widget.TextView;
 
 public class StoryActivity extends AppCompatActivity {
     public static final String TAG = StoryActivity.class.getSimpleName();
-    private TextView mNameTextView;
-    private TextView mPlaceTextView;
+    private TextView mWeatherTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story);
 
-        mNameTextView = (TextView) findViewById(R.id.nameTextView);
-        mPlaceTextView = (TextView) findViewById(R.id.placeTextView);
+        mWeatherTextView = (TextView) findViewById(R.id.storyText);
 
         Intent intent = getIntent();
 
         String name = intent.getStringExtra("name");
-        mNameTextView.setText(name);
         String place = intent.getStringExtra("place");
-        mPlaceTextView.setText(place);
+        String weather = intent.getStringExtra("weather");
+        String storyString = name + " went to " + place + " on a " + weather + " day"  ;
+                mWeatherTextView.setText(storyString);
     }
 }
+
+
+
+
+
+
+//        String sampleStory = String.format(getResources().getString(R.string.teststring), "name");

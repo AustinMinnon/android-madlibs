@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MadLibs</string>
+    <string name="teststring">hello, %s.</string>
 </resources>

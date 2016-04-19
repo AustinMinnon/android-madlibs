@@ -14,18 +14,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to Madlibs"
-        android:layout_marginTop="29dp"
-        android:textSize="25dp"
+        android:textSize="25sp"
+        android:id="@+id/textView2"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView2" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please choose words:"
         android:id="@+id/textView"
-        android:textSize="20dp"
+        android:textSize="20sp"
+        android:layout_marginTop="26dp"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
@@ -33,11 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/nameInput"
+        android:hint="Enter a name"
         android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginTop="41dp"
-        android:hint="Enter a name"/>
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -56,4 +54,13 @@
         android:layout_alignLeft="@+id/nameInput"
         android:layout_alignStart="@+id/nameInput"
         android:hint="Enter a Place"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherInput"
+        android:hint="Enter weather condition"
+        android:layout_below="@+id/placeInput"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
 </RelativeLayout>
