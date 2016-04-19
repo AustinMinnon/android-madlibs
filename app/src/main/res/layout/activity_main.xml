@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="Welcome to Madlibs"
         android:textSize="35sp"
-        android:id="@+id/textView2"
+        android:id="@+id/appNameTextView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -25,7 +25,7 @@
         android:text="Please choose words:"
         android:id="@+id/textView"
         android:textSize="20sp"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/appNameTextView"
         android:layout_centerHorizontal="true" />
 
     <EditText

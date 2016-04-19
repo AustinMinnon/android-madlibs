@@ -39,8 +39,7 @@ public class MainActivity extends AppCompatActivity {
 //                    String name = nameLowerCase.substring(0,1).toUpperCase() + nameLowerCase.substring(1);
 //                    String place = mPlaceEditText.getText().toString();
 //                    String weather = mWeatherEditText.getText().toString();
-                    String nameLowerCase = mNameEditText.getText().toString();
-                    String name = nameLowerCase.substring(0,1).toUpperCase() + nameLowerCase.substring(1);
+                    String name = mNameEditText.getText().toString();
                     String place = mPlaceEditText.getText().toString();
                     String verb = mVerbEditText.getText().toString();
                     String verb2 = mVerbEditText2.getText().toString();

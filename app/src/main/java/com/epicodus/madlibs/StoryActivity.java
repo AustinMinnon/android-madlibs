@@ -24,7 +24,7 @@ public class StoryActivity extends AppCompatActivity {
         String verb2 = intent.getStringExtra("verb2");
         String adjective = intent.getStringExtra("adjective");
         String animal = intent.getStringExtra("animal");
-        String storyString = name + " went to " + place + " on a " + weather + " day." + " A(n) " + adjective +" "+ animal + " " + verb + " in front of all of the " + verb2 + " people";
+        String storyString = name + " went to " + place + " on a " + weather + " day." + " A " + adjective +" "+ animal + " was " + verb + " in front of all of the " + verb2 + " people";
         mWeatherTextView.setText(storyString);
     }
 }
