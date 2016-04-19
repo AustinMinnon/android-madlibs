@@ -20,14 +20,12 @@ public class StoryActivity extends AppCompatActivity {
         String name = intent.getStringExtra("name");
         String place = intent.getStringExtra("place");
         String weather = intent.getStringExtra("weather");
-        String storyString = name + " went to " + place + " on a " + weather + " day"  ;
-                mWeatherTextView.setText(storyString);
+        String verb = intent.getStringExtra("verb");
+        String verb2 = intent.getStringExtra("verb2");
+        String adjective = intent.getStringExtra("adjective");
+        String animal = intent.getStringExtra("animal");
+        String storyString = name + " went to " + place + " on a " + weather + " day." + " A(n) " + adjective +" "+ animal + " " + verb + " in front of all of the " + verb2 + " people";
+        mWeatherTextView.setText(storyString);
     }
 }
 
-
-
-
-
-
-//        String sampleStory = String.format(getResources().getString(R.string.teststring), "name");
